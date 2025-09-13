@@ -1,0 +1,19 @@
+2025-09-13 06:55:43:5543 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-13 06:55:43:5543 [32minfo[39m: [32mCompound Agent chemical database initialized[39m
+2025-09-13 06:55:43:5543 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-13 06:55:43:5543 [32minfo[39m: [32mAgent Compound Analysis Agent started[39m
+2025-09-13 06:55:43:5543 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-13 06:55:48:5548 [31merror[39m: [31mFailed to start server: Database connection failed[39m
+2025-09-13 07:12:51:1251 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-13 07:12:51:1251 [32minfo[39m: [32mCompound Agent chemical database initialized[39m
+2025-09-13 07:12:51:1251 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-13 07:12:51:1251 [32minfo[39m: [32mCompound Agent chemical database initialized[39m
+2025-09-13 07:12:51:1251 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-13 07:12:51:1251 [32minfo[39m: [32mAgent Compound Analysis Agent started[39m
+2025-09-13 07:12:51:1251 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-13 07:38:07:387 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-13 07:38:07:387 [32minfo[39m: [32mCompound Agent chemical database initialized[39m
+2025-09-13 07:38:07:387 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-13 07:38:07:387 [32minfo[39m: [32mAgent Compound Analysis Agent started[39m
+2025-09-13 07:38:07:387 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-13 07:38:12:3812 [31merror[39m: [31mFailed to start server: Database connection failed[39m

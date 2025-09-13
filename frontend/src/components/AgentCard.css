@@ -1,0 +1,94 @@
+/* AgentCard component styles */
+.agent-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #4a7c59;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agent-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.agent-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.agent-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.agent-info h3 {
+  font-size: 1.2rem;
+  color: #2c5530;
+  margin: 0 0 0.25rem 0;
+}
+
+.agent-status {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.agent-description {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.agent-capabilities, .agent-metrics {
+  margin-top: 1rem;
+}
+
+.agent-capabilities h4, .agent-metrics h4 {
+  font-size: 0.9rem;
+  color: #2c5530;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.agent-capabilities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.agent-capabilities li {
+  background: #f0f8f2;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #2c5530;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.metric-value {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c5530;
+}

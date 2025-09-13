@@ -1,12 +1,25 @@
 {
-  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
     "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
     "outDir": "../dist/backend",
     "rootDir": "../",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
     "jsx": "react-jsx",
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    }
   },
   "include": [
     "./**/*",
@@ -15,6 +28,8 @@
   "exclude": [
     "node_modules",
     "**/*.test.ts",
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "../frontend/**/*",
+    "../dist/**/*"
   ]
 }

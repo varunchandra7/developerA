@@ -135,3 +135,486 @@
 2025-09-14 09:11:01:111 [35mhttp[39m: [35m182.69.11.82 GET / 304 - - 0.545 ms[39m
 2025-09-14 09:11:07:117 [35mhttp[39m: [35m182.69.11.82 GET / 200 146 - 0.562 ms[39m
 2025-09-14 09:11:25:1125 [35mhttp[39m: [35m182.69.11.82 GET / 304 - - 0.692 ms[39m
+2025-09-14 09:47:02:472 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 09:47:02:472 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 09:47:02:472 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 09:47:02:472 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 09:47:02:472 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 09:47:02:472 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 09:47:03:473 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 09:47:03:473 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 09:47:03:473 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 09:47:03:473 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 09:47:06:476 [35mhttp[39m: [35m182.69.11.82 GET / 304 - - 2.980 ms[39m
+2025-09-14 10:56:59:5659 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 10:56:59:5659 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 10:56:59:5659 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 10:56:59:5659 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 10:56:59:5659 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 10:56:59:5659 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 10:56:59:5659 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 10:56:59:5659 [31merror[39m: [31m❌ Database seeding failed: Herb validation failed: properties.vipaka: Path `properties.vipaka` is required., properties.virya: Path `properties.virya` is required., description: Path `description` is required., name.botanical: Path `name.botanical` is required., name.telugu: Path `name.telugu` is required., name.english: Path `name.english` is required., name.sanskrit: Path `name.sanskrit` is required.[39m
+2025-09-14 10:59:13:5913 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 10:59:13:5913 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 10:59:13:5913 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 10:59:13:5913 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 10:59:13:5913 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 10:59:13:5913 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 10:59:13:5913 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 10:59:13:5913 [31merror[39m: [31m❌ Database seeding failed: Herb validation failed: properties.vipaka: `कटु (Katu)` is not a valid enum value for path `properties.vipaka`., properties.virya: `उष्ण (Ushna)` is not a valid enum value for path `properties.virya`., properties.rasa.0: `कटु (Katu)` is not a valid enum value for path `properties.rasa.0`., properties.rasa.1: `तिक्त (Tikta)` is not a valid enum value for path `properties.rasa.1`., properties.guna.0: `रूक्ष (Ruksha)` is not a valid enum value for path `properties.guna.0`., properties.guna.1: `लघु (Laghu)` is not a valid enum value for path `properties.guna.1`., properties.dosha.0: `कफ-वात शामक (Kapha-Vata Shamak)` is not a valid enum value for path `properties.dosha.0`.[39m
+2025-09-14 11:14:32:1432 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:14:32:1432 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:14:32:1432 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:14:32:1432 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:14:32:1432 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:14:32:1432 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:14:32:1432 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:14:32:1432 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:14:32:1432 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:14:32:1432 [31merror[39m: [31m❌ Database seeding failed: Compound validation failed: iupacName: Path `iupacName` is required.[39m
+2025-09-14 11:15:55:1555 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:15:55:1555 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:15:55:1555 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:15:55:1555 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:15:55:1555 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:15:55:1555 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:15:55:1555 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:15:55:1555 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:15:55:1555 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:15:55:1555 [31merror[39m: [31m❌ Database seeding failed: Compound validation failed: inchiKey: Invalid InChI Key format[39m
+2025-09-14 11:16:25:1625 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:16:25:1625 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:16:25:1625 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:16:25:1625 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:16:25:1625 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:16:25:1625 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:16:25:1625 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:16:25:1625 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:16:25:1625 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:16:25:1625 [31merror[39m: [31m❌ Database seeding failed: Compound validation failed: inchiKey: Invalid InChI Key format[39m
+2025-09-14 11:19:43:1943 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:19:44:1944 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:19:44:1944 [31merror[39m: [31m❌ Database seeding failed: Literature validation failed: addedBy: Path `addedBy` is required., publication.year: Path `publication.year` (300) is less than minimum allowed value (1000).[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:20:59:2059 [31merror[39m: [31m❌ Database seeding failed: Literature validation failed: studyType: `review` is not a valid enum value for path `studyType`.[39m
+2025-09-14 11:20:59:2059 [32minfo[39m: [32m🔌 Database connection closed[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:21:34:2134 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:21:34:2134 [31merror[39m: [31m❌ Database seeding failed: Literature validation failed: publication.year: Path `publication.year` (600) is less than minimum allowed value (1000).[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:21:50:2150 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:21:50:2150 [31merror[39m: [31m❌ Database seeding failed: Literature validation failed: publication.year: Path `publication.year` (600) is less than minimum allowed value (1000).[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:22:14:2214 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m✅ Created 5 literature entries[39m
+2025-09-14 11:23:55:2355 [32minfo[39m: [32m🤖 Seeding agent data...[39m
+2025-09-14 11:23:55:2355 [31merror[39m: [31m❌ Database seeding failed: Agent validation failed: type: `cross_reference` is not a valid enum value for path `type`.[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m✅ Created 5 literature entries[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m🤖 Seeding agent data...[39m
+2025-09-14 11:24:15:2415 [31merror[39m: [31m❌ Database seeding failed: Agent validation failed: type: `cross_reference` is not a valid enum value for path `type`.[39m
+2025-09-14 11:24:15:2415 [32minfo[39m: [32m🔌 Database connection closed[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m✅ Created 5 literature entries[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m🤖 Seeding agent data...[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m✅ Created 3 agents[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m📊 Creating database indexes...[39m
+2025-09-14 11:24:56:2456 [31merror[39m: [31m❌ Database seeding failed: An equivalent index already exists with a different name and options. Requested index: { v: 2, key: { _fts: "text", _ftsx: 1 }, name: "herb_text_search", weights: { name: 10, sanskritName: 6, scientificName: 8, teluguName: 6 }, default_language: "english", language_override: "language", textIndexVersion: 3 }, existing index: { v: 2, key: { _fts: "text", _ftsx: 1 }, name: "name.sanskrit_text_name.english_text_name.telugu_text_name.botanical_text", background: true, weights: { name.botanical: 1, name.english: 1, name.sanskrit: 1, name.telugu: 1 }, default_language: "english", language_override: "language", textIndexVersion: 3 }[39m
+2025-09-14 11:24:56:2456 [32minfo[39m: [32m🔌 Database connection closed[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:25:32:2532 [31merror[39m: [31m❌ Database seeding failed: language override unsupported: sanskrit[39m
+2025-09-14 11:25:32:2532 [32minfo[39m: [32m🔌 Database connection closed[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🌱 Starting database seeding process...[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m✅ Database connected successfully[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🧹 Clearing existing data...[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m✅ Existing data cleared[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m👥 Seeding user data...[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m✅ Created 3 users[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🌿 Seeding herb data...[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m✅ Created 5 herbs[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🧪 Seeding compound data...[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m✅ Created 3 compounds[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m📚 Seeding literature data...[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m✅ Created 5 literature entries[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🤖 Seeding agent data...[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m✅ Created 3 agents[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🔍 Verifying seeded data...[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🔍 Verification results:[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Users in database: 3[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Herbs in database: 5[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Compounds in database: 3[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Literature entries in database: 5[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Agents in database: 3[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🔍 Text search test returned 1 results[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Top result: {[39m
+[32m  sanskrit: 'हरिद्रा (Haridra)',[39m
+[32m  english: 'Turmeric',[39m
+[32m  telugu: 'పసుపు (Pasupu)',[39m
+[32m  botanical: 'Curcuma longa'[39m
+[32m}[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m✅ Data verification completed[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🎉 Database seeding completed successfully![39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m📊 Summary:[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Users: 3[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Herbs: 5[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Compounds: 3[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Literature: 5[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m   - Agents: 3[39m
+2025-09-14 11:26:05:265 [32minfo[39m: [32m🔌 Database connection closed[39m
+2025-09-14 11:28:10:2810 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:28:10:2810 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:28:10:2810 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:28:10:2810 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:28:10:2810 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:28:10:2810 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 11:29:10:2910 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 11:29:17:2917 [35mhttp[39m: [35m182.69.11.82 GET / 200 146 - 2.887 ms[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 11:30:19:3019 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 11:30:22:3022 [35mhttp[39m: [35m182.69.11.82 GET / 200 146 - 3.045 ms[39m
+2025-09-14 11:32:20:3220 [35mhttp[39m: [35m::1 GET /api/v1/health 200 405 - 12.269 ms[39m
+2025-09-14 11:32:30:3230 [35mhttp[39m: [35m::1 GET /api/v1/health 200 404 - 2.112 ms[39m
+2025-09-14 11:32:37:3237 [35mhttp[39m: [35m182.69.11.82 GET / 200 146 - 0.628 ms[39m
+2025-09-14 11:32:41:3241 [31merror[39m: [31mError 404: Route /api/v1/herbs not found - URL: /api/v1/herbs - Method: GET - IP: ::1[39m
+2025-09-14 11:32:41:3241 [35mhttp[39m: [35m::1 GET /api/v1/herbs 404 206 - 2.547 ms[39m
+2025-09-14 11:33:03:333 [31merror[39m: [31mError 404: Route /api/v1/herbs not found - URL: /api/v1/herbs - Method: GET - IP: ::1[39m
+2025-09-14 11:33:03:333 [35mhttp[39m: [35m::1 GET /api/v1/herbs 404 206 - 2.170 ms[39m
+2025-09-14 11:35:43:3543 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:35:43:3543 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:35:43:3543 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:35:43:3543 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:35:43:3543 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:35:43:3543 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 11:35:44:3544 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 11:35:44:3544 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 11:35:44:3544 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 11:35:44:3544 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 11:35:57:3557 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 11:36:52:3652 [32minfo[39m: [32mRetrieved 5 herbs (page 1/1)[39m
+2025-09-14 11:36:52:3652 [35mhttp[39m: [35m::1 GET /api/v1/herbs 200 4648 - 19.457 ms[39m
+2025-09-14 11:37:01:371 [31merror[39m: [31mError 500: Cannot read properties of undefined (reading 'find') - URL: /api/v1/compounds - Method: GET - IP: ::1[39m
+2025-09-14 11:37:01:371 [35mhttp[39m: [35m::1 GET /api/v1/compounds 500 229 - 1.664 ms[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 11:37:20:3720 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 11:37:35:3735 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 11:37:44:3744 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:37:44:3744 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:37:44:3744 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:37:44:3744 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:37:44:3744 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:37:44:3744 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 11:37:45:3745 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 11:37:45:3745 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 11:37:45:3745 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 11:37:45:3745 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 11:37:53:3753 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 11:38:14:3814 [32minfo[39m: [32mRetrieved 3 compounds (page 1/1)[39m
+2025-09-14 11:38:14:3814 [35mhttp[39m: [35m::1 GET /api/v1/compounds 200 2275 - 13.514 ms[39m
+2025-09-14 11:38:29:3829 [32minfo[39m: [32mRetrieved 5 literature entries (page 1/1)[39m
+2025-09-14 11:38:29:3829 [35mhttp[39m: [35m::1 GET /api/v1/literature 200 3398 - 4.596 ms[39m
+2025-09-14 11:39:25:3925 [32minfo[39m: [32mRetrieved 3 agents[39m
+2025-09-14 11:39:25:3925 [35mhttp[39m: [35m::1 GET /api/v1/agents 200 2520 - 3.348 ms[39m
+2025-09-14 11:41:49:4149 [32minfo[39m: [32mRetrieved 1 herbs (page 1/1)[39m
+2025-09-14 11:41:49:4149 [35mhttp[39m: [35m::1 GET /api/v1/herbs?search=turmeric 200 1098 - 7.434 ms[39m
+2025-09-14 11:41:58:4158 [32minfo[39m: [32mRetrieved 1 compounds (page 1/1)[39m
+2025-09-14 11:41:58:4158 [35mhttp[39m: [35m::1 GET /api/v1/compounds?search=curcumin 200 965 - 4.570 ms[39m
+2025-09-14 11:42:09:429 [32minfo[39m: [32mRetrieved 1 literature entries (page 1/1)[39m
+2025-09-14 11:42:09:429 [35mhttp[39m: [35m::1 GET /api/v1/literature?search=curcumin 200 894 - 9.558 ms[39m
+2025-09-14 11:42:38:4238 [32minfo[39m: [32mRetrieved 3 agents[39m
+2025-09-14 11:42:38:4238 [35mhttp[39m: [35m::1 GET /api/v1/agents 200 2520 - 2.693 ms[39m
+2025-09-14 11:42:50:4250 [31merror[39m: [31mError 404: Route /api/v1/agents not found - URL: /api/v1/agents - Method: POST - IP: ::1[39m
+2025-09-14 11:42:50:4250 [35mhttp[39m: [35m::1 POST /api/v1/agents 404 207 - 1.292 ms[39m
+2025-09-14 11:43:00:430 [32minfo[39m: [32mRetrieved 3 agents[39m
+2025-09-14 11:43:00:430 [35mhttp[39m: [35m::1 GET /api/v1/agents 200 2520 - 2.948 ms[39m
+2025-09-14 11:43:30:4330 [32minfo[39m: [32mExecuted task with agent: Literature Processing Agent[39m
+2025-09-14 11:43:30:4330 [35mhttp[39m: [35m::1 POST /api/v1/agents/68c6a64dac66d2218745bcac/execute 200 368 - 53.977 ms[39m
+2025-09-14 11:46:05:465 [35mhttp[39m: [35m182.69.11.82 GET / 200 276 - 0.426 ms[39m
+2025-09-14 11:46:17:4617 [35mhttp[39m: [35m182.69.11.82 GET / 200 276 - 0.487 ms[39m
+2025-09-14 11:46:32:4632 [35mhttp[39m: [35m182.69.11.82 GET / 304 - - 0.463 ms[39m
+2025-09-14 11:48:06:486 [35mhttp[39m: [35m::1 GET /api/v1/health 200 404 - 1.703 ms[39m
+2025-09-14 11:54:36:5436 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 11:54:36:5436 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 11:54:36:5436 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 11:54:36:5436 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 11:54:36:5436 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 11:54:36:5436 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 12:53:00:530 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 12:53:00:530 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 12:53:00:530 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 12:53:00:530 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 12:53:00:530 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 12:53:00:530 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 12:53:05:535 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 12:53:05:535 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 12:53:05:535 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 12:53:05:535 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 12:53:31:5331 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 12:53:31:5331 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 12:53:31:5331 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 12:53:31:5331 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 12:53:31:5331 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 12:53:31:5331 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 12:53:33:5333 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 12:53:33:5333 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 12:53:33:5333 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 12:53:33:5333 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 12:54:14:5414 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 12:54:53:5453 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 12:54:56:5456 [35mhttp[39m: [35m182.69.11.82 GET / 200 276 - 3.009 ms[39m
+2025-09-14 12:54:57:5457 [31merror[39m: [31mError 404: Route /favicon.ico not found - URL: /favicon.ico - Method: GET - IP: 182.69.11.82[39m
+2025-09-14 12:54:57:5457 [35mhttp[39m: [35m182.69.11.82 GET /favicon.ico 404 205 - 1.328 ms[39m
+2025-09-14 12:55:27:5527 [35mhttp[39m: [35m::1 GET /api/v1/health 200 403 - 2.837 ms[39m
+2025-09-14 12:55:43:5543 [35mhttp[39m: [35m::1 GET /api/v1/health 200 403 - 1.280 ms[39m
+2025-09-14 12:55:53:5553 [32minfo[39m: [32mRetrieved 5 herbs (page 1/1)[39m
+2025-09-14 12:55:53:5553 [35mhttp[39m: [35m::1 GET /api/v1/herbs 200 4648 - 145.662 ms[39m
+2025-09-14 12:56:06:566 [32minfo[39m: [32mRetrieved 3 compounds (page 1/1)[39m
+2025-09-14 12:56:06:566 [35mhttp[39m: [35m::1 GET /api/v1/compounds 200 2275 - 51.708 ms[39m
+2025-09-14 12:56:08:568 [32minfo[39m: [32mRetrieved 5 literature entries (page 1/1)[39m
+2025-09-14 12:56:08:568 [35mhttp[39m: [35m::1 GET /api/v1/literature 200 3398 - 84.275 ms[39m
+2025-09-14 12:56:10:5610 [32minfo[39m: [32mRetrieved 3 agents[39m
+2025-09-14 12:56:10:5610 [35mhttp[39m: [35m::1 GET /api/v1/agents 200 2520 - 6.206 ms[39m
+2025-09-14 12:57:10:5710 [32minfo[39m: [32mExecuted task with agent: Literature Processing Agent[39m
+2025-09-14 12:57:10:5710 [35mhttp[39m: [35m::1 POST /api/v1/agents/68c6a64dac66d2218745bcac/execute 200 345 - 46.034 ms[39m
+2025-09-14 12:57:19:5719 [32minfo[39m: [32mRetrieved 1 herbs (page 1/1)[39m
+2025-09-14 12:57:19:5719 [35mhttp[39m: [35m::1 GET /api/v1/herbs?search=turmeric 200 1098 - 43.274 ms[39m
+2025-09-14 12:57:29:5729 [32minfo[39m: [32mRetrieved 3 compounds (page 1/1)[39m
+2025-09-14 12:57:29:5729 [35mhttp[39m: [35m::1 GET /api/v1/compounds?molecularFormula=C21H20O6 200 2275 - 3.661 ms[39m
+2025-09-14 12:57:37:5737 [32minfo[39m: [32mRetrieved 3 agents[39m
+2025-09-14 12:57:37:5737 [35mhttp[39m: [35m::1 GET /api/v1/agents 200 2520 - 2.682 ms[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 13:03:35:335 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 13:04:08:48 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 13:04:24:424 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 13:04:24:424 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 13:04:24:424 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 13:04:24:424 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 13:04:24:424 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 13:04:24:424 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 13:04:25:425 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 13:04:25:425 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 13:04:25:425 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 13:04:25:425 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 13:04:35:435 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 13:04:48:448 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 13:05:04:54 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 13:05:04:54 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 13:05:04:54 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 13:05:04:54 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 13:05:04:54 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 13:05:04:54 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 13:05:05:55 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 13:05:05:55 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 13:05:05:55 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 13:05:05:55 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 13:08:49:849 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 13:09:04:94 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m

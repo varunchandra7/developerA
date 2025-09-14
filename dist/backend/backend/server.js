@@ -10,6 +10,10 @@ const agents_1 = require("./agents");
 const database_1 = require("./config/database");
 const middleware_1 = require("./middleware");
 const health_1 = __importDefault(require("./routes/health"));
+const herbs_1 = __importDefault(require("./routes/herbs"));
+const compounds_1 = __importDefault(require("./routes/compounds"));
+const literature_1 = __importDefault(require("./routes/literature"));
+const agents_2 = __importDefault(require("./routes/agents"));
 const constants_1 = require("./utils/constants");
 const logger_1 = __importDefault(require("./utils/logger"));
 class Server {
@@ -53,10 +57,11 @@ class Server {
     initializeRoutes() {
         // Health check routes (before API base path)
         this.app.use('/api/v1', health_1.default);
-        // API routes will be added here
-        // this.app.use(`${API_BASE_URL}/users`, userRoutes);
-        // this.app.use(`${API_BASE_URL}/herbs`, herbRoutes);
-        // this.app.use(`${API_BASE_URL}/agents`, agentRoutes);
+        // API routes
+        this.app.use('/api/v1/herbs', herbs_1.default);
+        this.app.use('/api/v1/compounds', compounds_1.default);
+        this.app.use('/api/v1/literature', literature_1.default);
+        this.app.use('/api/v1/agents', agents_2.default);
         // Root endpoint
         this.app.get('/', (req, res) => {
             res.json({
@@ -65,6 +70,12 @@ class Server {
                 environment: constants_1.NODE_ENV,
                 documentation: '/api/v1/docs',
                 health: '/api/v1/health',
+                endpoints: {
+                    herbs: '/api/v1/herbs',
+                    compounds: '/api/v1/compounds',
+                    literature: '/api/v1/literature',
+                    agents: '/api/v1/agents'
+                }
             });
         });
     }
@@ -77,8 +88,18 @@ class Server {
     async start() {
         try {
             // Connect to database
-            await (0, database_1.connectDatabase)();
-            logger_1.default.info('Database connected successfully');
+            try {
+                await (0, database_1.connectDatabase)();
+                logger_1.default.info('Database connected successfully');
+            }
+            catch (error) {
+                if (constants_1.NODE_ENV === 'development') {
+                    logger_1.default.warn('Database connection failed in development mode, continuing without database');
+                }
+                else {
+                    throw error;
+                }
+            }
             // Start server
             this.app.listen(this.port, () => {
                 logger_1.default.info(`🚀 AyurDiscovery AI server running on port ${this.port} in ${constants_1.NODE_ENV} mode`);

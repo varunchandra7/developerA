@@ -162,7 +162,8 @@ export declare enum AgentType {
     TARGET_PREDICTOR = "target_predictor",
     TOXICITY_ASSESSOR = "toxicity_assessor",
     DRUG_DESIGNER = "drug_designer",
-    KNOWLEDGE_CURATOR = "knowledge_curator"
+    KNOWLEDGE_CURATOR = "knowledge_curator",
+    CROSS_REFERENCE = "cross_reference"
 }
 export declare enum AgentStatus {
     ACTIVE = "active",

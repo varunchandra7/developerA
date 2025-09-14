@@ -1,10 +1,10 @@
 // Demo backend server without database dependency
-import express from 'express';
 import cors from 'cors';
-import helmet from 'helmet';
+import express from 'express';
 import rateLimit from 'express-rate-limit';
-import { requestLogger } from './backend/middleware/requestLogger';
+import helmet from 'helmet';
 import { errorHandler } from './backend/middleware/errorHandler';
+import { requestLogger } from './backend/middleware/requestLogger';
 
 // Set environment variables for demo
 process.env['NODE_ENV'] = 'development';

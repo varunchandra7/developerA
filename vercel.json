@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "name": "ayurdiscovery-ai",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://ayurdiscovery-backend.railway.app/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "functions": {},
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://ayurdiscovery-backend.railway.app/api/$1"
+    }
+  ]
+}

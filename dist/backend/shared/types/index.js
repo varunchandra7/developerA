@@ -51,6 +51,7 @@ var AgentType;
     AgentType["TOXICITY_ASSESSOR"] = "toxicity_assessor";
     AgentType["DRUG_DESIGNER"] = "drug_designer";
     AgentType["KNOWLEDGE_CURATOR"] = "knowledge_curator";
+    AgentType["CROSS_REFERENCE"] = "cross_reference";
 })(AgentType || (exports.AgentType = AgentType = {}));
 var AgentStatus;
 (function (AgentStatus) {

@@ -12,6 +12,10 @@ import {
     requestLogger
 } from './middleware';
 import healthRoutes from './routes/health';
+import herbRoutes from './routes/herbs';
+import compoundRoutes from './routes/compounds';
+import literatureRoutes from './routes/literature';
+import agentRoutes from './routes/agents';
 import { NODE_ENV, PORT } from './utils/constants';
 import logger from './utils/logger';
 
@@ -65,10 +69,11 @@ class Server {
     // Health check routes (before API base path)
     this.app.use('/api/v1', healthRoutes);
 
-    // API routes will be added here
-    // this.app.use(`${API_BASE_URL}/users`, userRoutes);
-    // this.app.use(`${API_BASE_URL}/herbs`, herbRoutes);
-    // this.app.use(`${API_BASE_URL}/agents`, agentRoutes);
+    // API routes
+    this.app.use('/api/v1/herbs', herbRoutes);
+    this.app.use('/api/v1/compounds', compoundRoutes);
+    this.app.use('/api/v1/literature', literatureRoutes);
+    this.app.use('/api/v1/agents', agentRoutes);
 
     // Root endpoint
     this.app.get('/', (req, res) => {
@@ -78,6 +83,12 @@ class Server {
         environment: NODE_ENV,
         documentation: '/api/v1/docs',
         health: '/api/v1/health',
+        endpoints: {
+          herbs: '/api/v1/herbs',
+          compounds: '/api/v1/compounds',
+          literature: '/api/v1/literature',
+          agents: '/api/v1/agents'
+        }
       });
     });
   }

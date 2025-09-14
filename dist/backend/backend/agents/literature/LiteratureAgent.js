@@ -39,8 +39,14 @@ class LiteratureAgent extends AgentBase_1.AgentBase {
             const searchResults = await this.performLiteratureSearch(literatureInput);
             // Extract entities from results
             const enrichedResults = await this.extractEntitiesFromResults(searchResults);
+            // Perform advanced NLP analysis
+            const nlpAnalysis = await this.performNLPAnalysis(literatureInput.query, literatureInput.language);
             // Calculate relevance scores
             const rankedResults = this.rankResultsByRelevance(enrichedResults, literatureInput.query);
+            // Generate aggregated insights
+            const aggregatedInsights = await this.generateAggregatedInsights(rankedResults);
+            // Generate recommendations
+            const recommendations = await this.generateRecommendations(literatureInput, rankedResults);
             const output = {
                 results: rankedResults,
                 totalFound: rankedResults.length,
@@ -49,7 +55,10 @@ class LiteratureAgent extends AgentBase_1.AgentBase {
                     language: literatureInput.language,
                     searchType: literatureInput.searchType,
                     processingTime: Date.now() - startTime,
+                    nlpAnalysis,
                 },
+                aggregatedInsights,
+                recommendations,
             };
             return {
                 taskId: input.taskId,
@@ -72,10 +81,10 @@ class LiteratureAgent extends AgentBase_1.AgentBase {
         if (!input.query || input.query.trim().length === 0) {
             throw new Error('Query is required for literature search');
         }
-        if (!['english', 'telugu', 'sanskrit'].includes(input.language)) {
+        if (!['english', 'telugu', 'sanskrit', 'auto'].includes(input.language)) {
             throw new Error('Unsupported language for literature search');
         }
-        if (!['herb', 'compound', 'therapeutic_use', 'general'].includes(input.searchType)) {
+        if (!['herb', 'compound', 'therapeutic_use', 'general', 'formulation', 'preparation'].includes(input.searchType)) {
             throw new Error('Invalid search type for literature search');
         }
     }
@@ -121,16 +130,50 @@ class LiteratureAgent extends AgentBase_1.AgentBase {
                     name: 'Charaka Samhita',
                     author: 'Acharya Charaka',
                     reliability: 0.95,
+                    region: 'India',
+                    culturalContext: ['Ancient Ayurveda', 'Classical Sanskrit texts']
                 },
                 relevanceScore: 0.85,
                 extractedEntities: {
-                    herbs: ['ashwagandha', 'brahmi'],
-                    compounds: ['withanolides', 'bacosides'],
-                    therapeuticUses: ['stress relief', 'cognitive enhancement'],
+                    herbs: [
+                        { name: 'ashwagandha', confidence: 0.9, synonyms: ['winter cherry', 'withania'] },
+                        { name: 'brahmi', confidence: 0.85, synonyms: ['bacopa', 'water hyssop'] }
+                    ],
+                    compounds: [
+                        { name: 'withanolides', confidence: 0.8, chemicalName: 'Steroidal lactones' },
+                        { name: 'bacosides', confidence: 0.75, chemicalName: 'Triterpenoid saponins' }
+                    ],
+                    therapeuticUses: [
+                        { use: 'stress relief', confidence: 0.9, doshaContext: ['vata'] },
+                        { use: 'cognitive enhancement', confidence: 0.85, doshaContext: ['vata', 'pitta'] }
+                    ],
                     doshas: ['vata', 'pitta'],
+                    preparations: [
+                        { name: 'churna', method: 'powder form', ingredients: ['dried root'] }
+                    ],
+                    formulations: [
+                        { name: 'ashwagandharishta', type: 'fermented preparation', composition: ['ashwagandha', 'honey', 'water'] }
+                    ]
                 },
                 language: input.language,
                 translationAvailable: input.language !== 'english',
+                translations: {
+                    english: 'Traditional knowledge about adaptogenic herbs...',
+                    telugu: 'అశ్వగంధ గురించి సాంప్రదాయిక జ్ఞానం...',
+                    sanskrit: 'अश्वगन्धा विषये पारम्परिक ज्ञानम्...'
+                },
+                culturalContext: {
+                    region: 'Ancient India',
+                    tradition: 'Classical Ayurveda',
+                    significance: 'Foundational text for understanding Ayurvedic principles',
+                    modernRelevance: 'Scientific validation of traditional uses'
+                },
+                qualityMetrics: {
+                    textualQuality: 0.95,
+                    sourceCredibility: 0.98,
+                    factualAccuracy: 0.90,
+                    culturalAuthenticity: 1.0
+                }
             },
         ];
         // Filter based on search type
@@ -149,16 +192,44 @@ class LiteratureAgent extends AgentBase_1.AgentBase {
                     author: 'Research Team',
                     year: 2023,
                     reliability: 0.90,
+                    region: 'Global',
+                    culturalContext: ['Modern scientific research', 'Peer-reviewed studies']
                 },
                 relevanceScore: 0.80,
                 extractedEntities: {
-                    herbs: ['traditional_herb'],
-                    compounds: ['bioactive_compound_1', 'bioactive_compound_2'],
-                    therapeuticUses: ['anti-inflammatory', 'antioxidant'],
+                    herbs: [
+                        { name: 'traditional_herb', confidence: 0.85, synonyms: ['medicinal plant'] }
+                    ],
+                    compounds: [
+                        { name: 'bioactive_compound_1', confidence: 0.9, chemicalName: 'C20H24O5' },
+                        { name: 'bioactive_compound_2', confidence: 0.8, chemicalName: 'C15H18O3' }
+                    ],
+                    therapeuticUses: [
+                        { use: 'anti-inflammatory', confidence: 0.95 },
+                        { use: 'antioxidant', confidence: 0.88 }
+                    ],
                     doshas: [],
+                    preparations: [
+                        { name: 'standardized extract', method: 'solvent extraction', ingredients: ['plant material', 'ethanol'] }
+                    ],
+                    formulations: [
+                        { name: 'capsule form', type: 'pharmaceutical preparation', composition: ['extract', 'excipients'] }
+                    ]
                 },
                 language: 'english',
                 translationAvailable: false,
+                culturalContext: {
+                    region: 'Global research',
+                    tradition: 'Modern pharmacology',
+                    significance: 'Evidence-based validation of traditional uses',
+                    modernRelevance: 'Clinical application potential'
+                },
+                qualityMetrics: {
+                    textualQuality: 0.92,
+                    sourceCredibility: 0.95,
+                    factualAccuracy: 0.98,
+                    culturalAuthenticity: 0.6
+                }
             },
         ];
         return mockResults.filter(result => this.isRelevantToSearchType(result, input.searchType));
@@ -270,10 +341,248 @@ class LiteratureAgent extends AgentBase_1.AgentBase {
         this.sanskritVocabulary.set('ashwagandha', 'अश्वगन्धा');
         logger_1.default.info('Literature Agent knowledge base initialized');
     }
-    async updateKnowledgeBase(newData) {
+    async updateKnowledgeBase(_newData) {
         // Method to update the knowledge base with new literature data
         logger_1.default.info('Updating Literature Agent knowledge base');
         // Implementation would update the various maps and databases
+    }
+    /**
+     * Advanced NLP Analysis for query understanding and context extraction
+     */
+    async performNLPAnalysis(query, language) {
+        // Language detection (simplified implementation)
+        const detectedLanguage = this.detectLanguage(query, language);
+        // Extract concepts using pattern matching and NLP
+        const concepts = this.extractConcepts(query);
+        // Find synonyms for better search coverage
+        const synonyms = this.findSynonyms(concepts);
+        // Calculate query complexity
+        const complexity = this.calculateQueryComplexity(query);
+        return {
+            queryComplexity: complexity,
+            languageDetected: detectedLanguage,
+            conceptsExtracted: concepts,
+            synonymsUsed: synonyms,
+        };
+    }
+    /**
+     * Generate aggregated insights from search results
+     */
+    async generateAggregatedInsights(results) {
+        // Analyze concept frequency and relevance
+        const conceptFrequency = this.analyzeConceptFrequency(results);
+        // Generate cross-linguistic mappings
+        const linguisticMappings = this.generateCrossLinguisticMappings(results);
+        // Identify therapeutic patterns
+        const therapeuticPatterns = this.identifyTherapeuticPatterns(results);
+        // Analyze timeline trends
+        const timelineTrends = this.analyzeTimelineTrends(results);
+        return {
+            mostRelevantConcepts: conceptFrequency,
+            crossLinguisticMappings: linguisticMappings,
+            therapeuticPatterns,
+            timelineTrends,
+        };
+    }
+    /**
+     * Generate intelligent recommendations based on search results
+     */
+    async generateRecommendations(input, results) {
+        // Generate related queries based on concepts found
+        const relatedQueries = this.generateRelatedQueries(input.query, results);
+        // Suggest readings based on source credibility and relevance
+        const suggestedReadings = this.suggestReadings(results);
+        // Recommend expert consultation areas
+        const expertConsultation = this.recommendExpertConsultation(results);
+        // Provide cultural context notes
+        const culturalNotes = this.generateCulturalNotes(results, input.language);
+        return {
+            relatedQueries,
+            suggestedReadings,
+            expertConsultation,
+            culturalNotes,
+        };
+    }
+    // Helper methods for NLP analysis
+    detectLanguage(query, providedLanguage) {
+        if (providedLanguage !== 'auto')
+            return providedLanguage;
+        // Simple language detection based on character sets
+        const teluguRegex = /[\u0C00-\u0C7F]/;
+        const sanskritRegex = /[\u0900-\u097F]/;
+        if (teluguRegex.test(query))
+            return 'telugu';
+        if (sanskritRegex.test(query))
+            return 'sanskrit';
+        return 'english';
+    }
+    extractConcepts(query) {
+        // Enhanced concept extraction using medical/ayurvedic term patterns
+        const concepts = [];
+        const words = query.toLowerCase().split(/\s+/);
+        // Medical terms pattern matching
+        const medicalTerms = ['herb', 'medicine', 'treatment', 'therapy', 'compound', 'extract', 'formula'];
+        const ayurvedicTerms = ['dosha', 'vata', 'pitta', 'kapha', 'rasa', 'virya', 'vipaka', 'guna'];
+        words.forEach(word => {
+            if (medicalTerms.includes(word) || ayurvedicTerms.includes(word)) {
+                concepts.push(word);
+            }
+        });
+        return concepts;
+    }
+    findSynonyms(concepts) {
+        const synonymMap = {
+            'herb': ['plant', 'botanical', 'medicinal plant'],
+            'medicine': ['drug', 'remedy', 'therapeutic agent'],
+            'treatment': ['therapy', 'healing', 'cure'],
+            'compound': ['chemical', 'substance', 'ingredient']
+        };
+        const synonyms = [];
+        concepts.forEach(concept => {
+            if (synonymMap[concept]) {
+                synonyms.push(...synonymMap[concept]);
+            }
+        });
+        return synonyms;
+    }
+    calculateQueryComplexity(query) {
+        // Calculate complexity based on query features
+        const words = query.split(/\s+/).length;
+        const hasSpecialTerms = /\b(and|or|not|effect|mechanism|interaction)\b/i.test(query);
+        const hasQuotes = query.includes('"');
+        let complexity = Math.min(words / 10, 1); // Base complexity from word count
+        if (hasSpecialTerms)
+            complexity += 0.3;
+        if (hasQuotes)
+            complexity += 0.2;
+        return Math.min(complexity, 1);
+    }
+    analyzeConceptFrequency(results) {
+        const conceptMap = new Map();
+        results.forEach(result => {
+            // Analyze herbs - handle both old and new format
+            result.extractedEntities.herbs.forEach(herb => {
+                const key = typeof herb === 'string' ? herb : herb.name;
+                const confidence = typeof herb === 'string' ? 0.5 : herb.confidence;
+                if (!conceptMap.has(key)) {
+                    conceptMap.set(key, { count: 0, totalConfidence: 0 });
+                }
+                const entry = conceptMap.get(key);
+                entry.count++;
+                entry.totalConfidence += confidence;
+            });
+        });
+        return Array.from(conceptMap.entries())
+            .map(([concept, data]) => ({
+            concept,
+            frequency: data.count,
+            confidence: data.totalConfidence / data.count
+        }))
+            .sort((a, b) => b.frequency - a.frequency)
+            .slice(0, 10);
+    }
+    generateCrossLinguisticMappings(results) {
+        const mappings = [];
+        // Extract terms that have translations available
+        results.forEach(result => {
+            if (result.translations) {
+                const translations = {};
+                if (result.translations['english'])
+                    translations['english'] = result.translations['english'];
+                if (result.translations['telugu'])
+                    translations['telugu'] = result.translations['telugu'];
+                if (result.translations['sanskrit'])
+                    translations['sanskrit'] = result.translations['sanskrit'];
+                if (Object.keys(translations).length > 1) {
+                    mappings.push({
+                        term: result.title,
+                        translations
+                    });
+                }
+            }
+        });
+        return mappings.slice(0, 5);
+    }
+    identifyTherapeuticPatterns(results) {
+        const patternMap = new Map();
+        results.forEach(result => {
+            result.extractedEntities.therapeuticUses.forEach(use => {
+                const useString = typeof use === 'string' ? use : use.use;
+                if (!patternMap.has(useString)) {
+                    patternMap.set(useString, { count: 0, sources: new Set() });
+                }
+                const entry = patternMap.get(useString);
+                entry.count++;
+                entry.sources.add(result.source.name);
+            });
+        });
+        return Array.from(patternMap.entries())
+            .map(([pattern, data]) => ({
+            pattern,
+            frequency: data.count,
+            sources: Array.from(data.sources)
+        }))
+            .sort((a, b) => b.frequency - a.frequency)
+            .slice(0, 5);
+    }
+    analyzeTimelineTrends(results) {
+        const timelineMap = new Map();
+        results.forEach(result => {
+            if (result.source.year) {
+                const decade = Math.floor(result.source.year / 10) * 10;
+                const period = `${decade}s`;
+                if (!timelineMap.has(period)) {
+                    timelineMap.set(period, []);
+                }
+                timelineMap.get(period).push(result.title);
+            }
+        });
+        return Array.from(timelineMap.entries())
+            .map(([period, developments]) => ({ period, developments: developments.slice(0, 3) }))
+            .sort((a, b) => parseInt(b.period) - parseInt(a.period));
+    }
+    generateRelatedQueries(originalQuery, _results) {
+        const queries = [];
+        const concepts = this.extractConcepts(originalQuery);
+        // Generate queries based on found concepts
+        concepts.forEach(concept => {
+            queries.push(`${concept} mechanisms of action`);
+            queries.push(`${concept} clinical studies`);
+            queries.push(`${concept} traditional preparation methods`);
+        });
+        return queries.slice(0, 5);
+    }
+    suggestReadings(results) {
+        return results
+            .filter(result => result.source.reliability > 0.7)
+            .sort((a, b) => b.relevanceScore - a.relevanceScore)
+            .slice(0, 5)
+            .map(result => `${result.title} - ${result.source.name}`);
+    }
+    recommendExpertConsultation(results) {
+        const recommendations = [];
+        const hasTraditionalContent = results.some(r => r.source.type === 'traditional_text');
+        const hasModernContent = results.some(r => r.source.type === 'scientific_paper');
+        if (hasTraditionalContent) {
+            recommendations.push('Ayurvedic practitioner consultation recommended');
+        }
+        if (hasModernContent) {
+            recommendations.push('Pharmacology expert consultation recommended');
+        }
+        return recommendations;
+    }
+    generateCulturalNotes(results, language) {
+        const notes = [];
+        if (language === 'telugu') {
+            notes.push('Telugu medical traditions emphasize regional herb varieties');
+            notes.push('Consider local preparation methods specific to Andhra Pradesh/Telangana');
+        }
+        const hasTraditionalSources = results.some(r => r.source.type === 'traditional_text');
+        if (hasTraditionalSources) {
+            notes.push('Traditional texts require cultural context for proper interpretation');
+            notes.push('Seasonal and regional variations should be considered');
+        }
+        return notes;
     }
 }
 exports.LiteratureAgent = LiteratureAgent;

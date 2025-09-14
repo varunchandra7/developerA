@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.HTTP_STATUS = exports.LOG_LEVELS = exports.DRUG_LIKENESS_RANGES = exports.AYURVEDIC_CONCEPTS = exports.COLLECTIONS = exports.AGENT_CONFIG = exports.CACHE_TTL = exports.ALLOWED_FILE_TYPES = exports.MAX_FILE_SIZE = exports.MAX_PAGE_SIZE = exports.DEFAULT_PAGE_SIZE = exports.RATE_LIMIT_MAX_REQUESTS = exports.RATE_LIMIT_WINDOW_MS = exports.API_BASE_URL = exports.API_VERSION = exports.JWT_EXPIRES_IN = exports.JWT_SECRET = exports.REDIS_URL = exports.MONGODB_URI = exports.PORT = exports.NODE_ENV = void 0;
 // Environment configuration
 exports.NODE_ENV = process.env['NODE_ENV'] || 'development';
-exports.PORT = process.env['PORT'] || 3001;
+exports.PORT = process.env['PORT'] || 3002;
 exports.MONGODB_URI = process.env['MONGODB_URI'] || 'mongodb://localhost:27017/ayurdiscovery';
 exports.REDIS_URL = process.env['REDIS_URL'] || 'redis://localhost:6379';
 exports.JWT_SECRET = process.env['JWT_SECRET'] || 'your-secret-key';

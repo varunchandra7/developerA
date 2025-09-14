@@ -1,7 +1,7 @@
-import { NODE_ENV, PORT } from './utils/constants';
 import cors from 'cors';
 import express, { Application } from 'express';
 import helmet from 'helmet';
+import { AgentCoordinator } from './agents';
 import { connectDatabase } from './config/database';
 import {
     apiLimiter,
@@ -12,7 +12,7 @@ import {
     requestLogger
 } from './middleware';
 import healthRoutes from './routes/health';
-import { AgentCoordinator } from './agents';
+import { NODE_ENV, PORT } from './utils/constants';
 import logger from './utils/logger';
 
 class Server {
@@ -93,8 +93,16 @@ class Server {
   public async start(): Promise<void> {
     try {
       // Connect to database
-      await connectDatabase();
-      logger.info('Database connected successfully');
+      try {
+        await connectDatabase();
+        logger.info('Database connected successfully');
+      } catch (error) {
+        if (NODE_ENV === 'development') {
+          logger.warn('Database connection failed in development mode, continuing without database');
+        } else {
+          throw error;
+        }
+      }
 
       // Start server
       this.app.listen(this.port, () => {

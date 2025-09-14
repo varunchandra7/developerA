@@ -1,9 +1,9 @@
 import { EventEmitter } from 'events';
-import { AgentBase, AgentInput, AgentOutput } from '../base/AgentBase';
-import { LiteratureAgent } from '../literature/LiteratureAgent';
-import { CompoundAgent } from '../compound/CompoundAgent';
-import { AgentStatus, TaskType, TaskStatus, TaskPriority } from '../../../shared/types';
+import { TaskPriority, TaskStatus } from '../../../shared/types';
 import logger from '../../utils/logger';
+import { AgentBase, AgentInput, AgentOutput } from '../base/AgentBase';
+import { CompoundAgent } from '../compound/CompoundAgent';
+import { LiteratureAgent } from '../literature/LiteratureAgent';
 
 export interface CoordinatedTask {
   id: string;

@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AgentProvider } from './context/AgentContext';
-import Dashboard from './pages/Dashboard';
-import AgentManagement from './pages/AgentManagement';
-import Navigation from './components/Navigation';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
+import Navigation from './components/Navigation';
+import { AgentProvider } from './context/AgentContext';
+import AgentManagement from './pages/AgentManagement';
+import Dashboard from './pages/Dashboard';
 
 const App: React.FC = () => {
   return (

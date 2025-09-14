@@ -1,10 +1,10 @@
 // Test script to verify backend components work without database
-import express from 'express';
 import cors from 'cors';
-import helmet from 'helmet';
+import express from 'express';
 import rateLimit from 'express-rate-limit';
-import { requestLogger } from './backend/middleware/requestLogger';
+import helmet from 'helmet';
 import { errorHandler } from './backend/middleware/errorHandler';
+import { requestLogger } from './backend/middleware/requestLogger';
 
 // Set environment variables for testing
 process.env['NODE_ENV'] = 'test';

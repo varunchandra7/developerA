@@ -5,10 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AgentCoordinator = void 0;
 const events_1 = require("events");
-const LiteratureAgent_1 = require("../literature/LiteratureAgent");
-const CompoundAgent_1 = require("../compound/CompoundAgent");
 const types_1 = require("../../../shared/types");
 const logger_1 = __importDefault(require("../../utils/logger"));
+const CompoundAgent_1 = require("../compound/CompoundAgent");
+const LiteratureAgent_1 = require("../literature/LiteratureAgent");
 /**
  * Agent Coordinator manages the multi-agent system for AyurDiscovery AI
  * Orchestrates workflows, synthesizes results, and ensures quality

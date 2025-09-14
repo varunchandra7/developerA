@@ -3,14 +3,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const constants_1 = require("./utils/constants");
 const cors_1 = __importDefault(require("cors"));
 const express_1 = __importDefault(require("express"));
 const helmet_1 = __importDefault(require("helmet"));
+const agents_1 = require("./agents");
 const database_1 = require("./config/database");
 const middleware_1 = require("./middleware");
 const health_1 = __importDefault(require("./routes/health"));
-const agents_1 = require("./agents");
+const constants_1 = require("./utils/constants");
 const logger_1 = __importDefault(require("./utils/logger"));
 class Server {
     app;

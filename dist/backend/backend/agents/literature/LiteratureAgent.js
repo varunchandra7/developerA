@@ -4,9 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LiteratureAgent = void 0;
-const AgentBase_1 = require("../base/AgentBase");
 const types_1 = require("../../../shared/types");
 const logger_1 = __importDefault(require("../../utils/logger"));
+const AgentBase_1 = require("../base/AgentBase");
 /**
  * Literature Agent for processing Ayurvedic texts and scientific literature
  * Handles multilingual search, entity extraction, and knowledge synthesis

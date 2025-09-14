@@ -73,6 +73,13 @@ class DatabaseConnection {
       console.log('MongoDB connection established');
     } catch (error) {
       console.error('Failed to connect to MongoDB:', error);
+      
+      // In development mode, continue without database
+      if (NODE_ENV === 'development') {
+        console.warn('Running in development mode without database connection');
+        return;
+      }
+      
       throw new Error('Database connection failed');
     }
   }

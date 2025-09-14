@@ -1,6 +1,6 @@
 // Environment configuration
 export const NODE_ENV = process.env['NODE_ENV'] || 'development';
-export const PORT = process.env['PORT'] || 3001;
+export const PORT = process.env['PORT'] || 3002;
 export const MONGODB_URI = process.env['MONGODB_URI'] || 'mongodb://localhost:27017/ayurdiscovery';
 export const REDIS_URL = process.env['REDIS_URL'] || 'redis://localhost:6379';
 export const JWT_SECRET = process.env['JWT_SECRET'] || 'your-secret-key';

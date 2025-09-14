@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events';
-import { Agent, AgentStatus, AgentMetrics, Task, TaskStatus, AgentType } from '../../../shared/types';
+import { Agent, AgentMetrics, AgentStatus, AgentType, Task, TaskStatus } from '../../../shared/types';
 import logger from '../../utils/logger';
 
 export interface AgentInput {

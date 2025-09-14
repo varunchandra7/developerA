@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express';
+import { NextFunction, Request, Response } from 'express';
 /**
  * Express middleware for logging HTTP requests
  * Logs request details including method, URL, IP, and response time

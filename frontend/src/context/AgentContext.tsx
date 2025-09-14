@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer, ReactNode } from 'react';
+import React, { createContext, ReactNode, useContext, useReducer } from 'react';
 
 // Types
 interface Agent {
@@ -94,4 +94,4 @@ export const useAgent = () => {
   return context;
 };
 
-export type { Agent, AgentState, AgentAction };
+export type { Agent, AgentAction, AgentState };

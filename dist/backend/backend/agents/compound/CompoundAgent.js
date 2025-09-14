@@ -4,9 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CompoundAgent = void 0;
-const AgentBase_1 = require("../base/AgentBase");
 const types_1 = require("../../../shared/types");
 const logger_1 = __importDefault(require("../../utils/logger"));
+const AgentBase_1 = require("../base/AgentBase");
 /**
  * Compound Agent for analyzing chemical compounds and predicting their properties
  * Handles molecular analysis, ADMET prediction, and bioactivity assessment

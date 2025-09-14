@@ -1,6 +1,5 @@
-import { NODE_ENV } from '../../shared/constants';
 import winston from 'winston';
-import path from 'path';
+import { NODE_ENV } from '../../shared/constants';
 
 // Simple constants without importing from shared
 const LOG_LEVELS = {

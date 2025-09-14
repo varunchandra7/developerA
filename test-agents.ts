@@ -1,6 +1,6 @@
-import { LiteratureAgent } from './backend/agents/literature/LiteratureAgent';
 import { CompoundAgent } from './backend/agents/compound/CompoundAgent';
 import { AgentCoordinator } from './backend/agents/coordinator/AgentCoordinator';
+import { LiteratureAgent } from './backend/agents/literature/LiteratureAgent';
 
 console.log('Testing AyurDiscovery AI Agent System...');
 

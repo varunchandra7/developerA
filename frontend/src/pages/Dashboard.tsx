@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useAgent } from '../context/AgentContext';
 import AgentCard from '../components/AgentCard';
 import SystemStatus from '../components/SystemStatus';
+import { useAgent } from '../context/AgentContext';
 import './Dashboard.css';
 
 const Dashboard: React.FC = () => {
@@ -13,7 +13,7 @@ const Dashboard: React.FC = () => {
     const fetchAgents = async () => {
       dispatch({ type: 'SET_LOADING', payload: true });
       try {
-        const response = await fetch('http://localhost:3001/api/agents');
+        const response = await fetch('http://localhost:3002/api/agents');
         if (response.ok) {
           const data = await response.json();
           dispatch({ type: 'SET_AGENTS', payload: data.agents });
@@ -29,7 +29,7 @@ const Dashboard: React.FC = () => {
     // Fetch system health
     const fetchHealth = async () => {
       try {
-        const response = await fetch('http://localhost:3001/health');
+        const response = await fetch('http://localhost:3002/health');
         if (response.ok) {
           setSystemHealth('healthy');
         } else {

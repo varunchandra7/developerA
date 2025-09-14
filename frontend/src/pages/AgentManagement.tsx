@@ -1,6 +1,6 @@
 import React from 'react';
-import { useAgent } from '../context/AgentContext';
 import AgentCard from '../components/AgentCard';
+import { useAgent } from '../context/AgentContext';
 import './AgentManagement.css';
 
 const AgentManagement: React.FC = () => {

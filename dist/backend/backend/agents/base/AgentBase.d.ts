@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events';
-import { Agent, AgentStatus, AgentMetrics, Task, AgentType } from '../../../shared/types';
+import { Agent, AgentMetrics, AgentStatus, AgentType, Task } from '../../../shared/types';
 export interface AgentInput {
     taskId: string;
     data: Record<string, unknown>;

@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events';
+import { TaskPriority, TaskStatus } from '../../../shared/types';
 import { AgentOutput } from '../base/AgentBase';
-import { TaskStatus, TaskPriority } from '../../../shared/types';
 export interface CoordinatedTask {
     id: string;
     type: 'ayurveda_research' | 'compound_discovery' | 'literature_review' | 'cross_validation';

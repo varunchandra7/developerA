@@ -17,3 +17,121 @@
 2025-09-13 07:38:07:387 [32minfo[39m: [32mAgent Compound Analysis Agent started[39m
 2025-09-13 07:38:07:387 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
 2025-09-13 07:38:12:3812 [31merror[39m: [31mFailed to start server: Database connection failed[39m
+2025-09-13 07:41:28:4128 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-13 07:41:28:4128 [32minfo[39m: [32mCompound Agent chemical database initialized[39m
+2025-09-13 07:41:28:4128 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-13 07:41:28:4128 [32minfo[39m: [32mAgent Compound Analysis Agent started[39m
+2025-09-13 07:41:28:4128 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-13 07:41:29:4129 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-13 07:41:29:4129 [32minfo[39m: [32mCompound Agent chemical database initialized[39m
+2025-09-13 07:41:29:4129 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-13 07:41:29:4129 [32minfo[39m: [32mAgent Compound Analysis Agent started[39m
+2025-09-13 07:41:29:4129 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-13 07:41:35:4135 [31merror[39m: [31mFailed to start server: Database connection failed[39m
+2025-09-13 08:42:45:4245 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-13 08:42:45:4245 [32minfo[39m: [32mCompound Agent chemical database initialized[39m
+2025-09-13 08:42:45:4245 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-13 08:42:45:4245 [32minfo[39m: [32mAgent Compound Analysis Agent started[39m
+2025-09-13 08:42:45:4245 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-13 08:42:50:4250 [31merror[39m: [31mFailed to start server: Database connection failed[39m
+2025-09-13 08:44:30:4430 [32minfo[39m: [32mGET / - IP: ::1[39m
+2025-09-13 08:44:30:4430 [32minfo[39m: [32mGET / - 404 - 4ms[39m
+2025-09-13 08:45:57:4557 [32minfo[39m: [32mGET / - IP: ::1[39m
+2025-09-13 08:45:57:4557 [32minfo[39m: [32mGET / - 404 - 4ms[39m
+2025-09-13 08:46:07:467 [32minfo[39m: [32mGET /health - IP: ::1[39m
+2025-09-13 08:46:07:467 [32minfo[39m: [32mGET /health - 200 - 2ms[39m
+2025-09-13 08:46:44:4644 [32minfo[39m: [32mGET /health - IP: ::1[39m
+2025-09-13 08:46:44:4644 [32minfo[39m: [32mGET /health - 200 - 3ms[39m
+2025-09-13 08:46:44:4644 [32minfo[39m: [32mGET /api/agents - IP: ::1[39m
+2025-09-13 08:46:44:4644 [32minfo[39m: [32mGET /api/agents - 200 - 1ms[39m
+2025-09-13 08:46:44:4644 [32minfo[39m: [32mPOST /api/analyze/compound - IP: ::1[39m
+2025-09-13 08:46:44:4644 [32minfo[39m: [32mPOST /api/analyze/compound - 200 - 18ms[39m
+2025-09-13 08:46:44:4644 [32minfo[39m: [32mGET /api/search/literature?q=turmeric - IP: ::1[39m
+2025-09-13 08:46:44:4644 [32minfo[39m: [32mGET /api/search/literature?q=turmeric - 200 - 1ms[39m
+2025-09-14 08:27:22:2722 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 08:27:22:2722 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 08:27:22:2722 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 08:27:22:2722 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 08:27:22:2722 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 08:27:22:2722 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 08:27:27:2727 [31merror[39m: [31mFailed to start server: Database connection failed[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3001 in development mode[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32m📚 API Documentation: http://localhost:3001/api/v1/docs[39m
+2025-09-14 09:02:10:210 [32minfo[39m: [32m❤️  Health Check: http://localhost:3001/api/v1/health[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3001 in development mode[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32m📚 API Documentation: http://localhost:3001/api/v1/docs[39m
+2025-09-14 09:03:07:37 [32minfo[39m: [32m❤️  Health Check: http://localhost:3001/api/v1/health[39m
+2025-09-14 09:03:33:333 [35mhttp[39m: [35m::1 GET /api/v1/health 200 403 - 8.658 ms[39m
+2025-09-14 09:03:48:348 [35mhttp[39m: [35m::1 GET /api/v1/health 200 402 - 2.394 ms[39m
+2025-09-14 09:03:57:357 [35mhttp[39m: [35m::1 GET /api/v1/health 200 403 - 1.871 ms[39m
+2025-09-14 09:06:20:620 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 09:06:20:620 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 09:06:20:620 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 09:06:20:620 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 09:06:20:620 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 09:06:20:620 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 09:06:20:620 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 09:07:09:79 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 09:07:09:79 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 09:07:09:79 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 09:07:09:79 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 09:07:09:79 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 09:07:09:79 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 09:07:47:747 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 09:07:50:750 [35mhttp[39m: [35m182.69.11.82 GET / 200 146 - 2.944 ms[39m
+2025-09-14 09:07:51:751 [31merror[39m: [31mError 404: Route /favicon.ico not found - URL: /favicon.ico - Method: GET - IP: 182.69.11.82[39m
+2025-09-14 09:07:51:751 [35mhttp[39m: [35m182.69.11.82 GET /favicon.ico 404 205 - 1.483 ms[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 09:08:44:844 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 09:08:49:849 [35mhttp[39m: [35m182.69.11.82 GET / 200 146 - 3.212 ms[39m
+2025-09-14 09:09:07:97 [35mhttp[39m: [35m182.69.11.82 GET / 200 146 - 0.757 ms[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32mLiterature Agent knowledge base initialized[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32mInitializing compound analysis databases...[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32mCompound databases initialized successfully[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32mAgent Literature Processing Agent started[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32mAgent Enhanced Compound Analysis Agent started[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32mAgent Coordinator initialized with agents:[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32mDatabase connected successfully[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32m🚀 AyurDiscovery AI server running on port 3002 in development mode[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32m📚 API Documentation: http://localhost:3002/api/v1/docs[39m
+2025-09-14 09:09:26:926 [32minfo[39m: [32m❤️  Health Check: http://localhost:3002/api/v1/health[39m
+2025-09-14 09:09:43:943 [35mhttp[39m: [35m::1 GET /api/v1/health 200 403 - 11.001 ms[39m
+2025-09-14 09:09:50:950 [35mhttp[39m: [35m::1 GET /api/v1/health 200 403 - 2.440 ms[39m
+2025-09-14 09:10:06:106 [35mhttp[39m: [35m::1 GET /api/v1/health 200 403 - 2.456 ms[39m
+2025-09-14 09:10:15:1015 [35mhttp[39m: [35m::1 GET / 200 146 - 2.285 ms[39m
+2025-09-14 09:10:27:1027 [35mhttp[39m: [35m::1 GET /api/v1/health 200 403 - 1.789 ms[39m
+2025-09-14 09:10:27:1027 [35mhttp[39m: [35m::1 GET /api/v1/health 200 403 - 1.539 ms[39m
+2025-09-14 09:11:01:111 [35mhttp[39m: [35m182.69.11.82 GET / 304 - - 0.545 ms[39m
+2025-09-14 09:11:07:117 [35mhttp[39m: [35m182.69.11.82 GET / 200 146 - 0.562 ms[39m
+2025-09-14 09:11:25:1125 [35mhttp[39m: [35m182.69.11.82 GET / 304 - - 0.692 ms[39m
